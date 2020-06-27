@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="cl">Calculator</div>
+    <div class="calculator container-fluid">
+        <table class="tables container-fluid">
+            <thead>
+                <tr>
+                    <input type="text" id="result" class="inp">
+                </tr>
+            </thead>
+            <tr>
+                <th><button class="clear cal but " onclick="clearNumber()">C</button></th>
+                <th><button type="reset" class="operators cal but yel" onclick="window.location.reload()">ON</button></th>
+                <th><button class="operators cal but " onclick="sqrt('num')">√</button></th>
+                <th><button class="operators cal but " onclick="per()">%</button></th>
+            </tr>
+            <tr>
+                <td><button class="numbers cal but " onclick="getNumber('7')">7</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('8')">8</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('9')">9</button></td>
+                <td><button class="operators cal but " onclick="getNumber('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="numbers cal but " onclick="getNumber('4')">4</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('5')">5</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('6')">6</button></td>
+                <td><button class="operators cal but " onclick="getNumber('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="numbers cal but " onclick="getNumber('1')">1</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('2')">2</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('3')">3</button></td>
+                <td><button class="operators cal but " onclick="getNumber('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="numbers cal but " onclick="getNumber('0')">0</button></td>
+                <td><button class="numbers cal but " onclick="getNumber('.')">.</button></td>
+                <td><button class="operators cal but equal " onkeypress="javascript:getResult()" onclick="getResult()">=</button></td>
+                <td><button id="plus " class="operators cal plus but " onclick="getNumber('+')">+</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+<script src="app.js "></script>
+
+</html>
